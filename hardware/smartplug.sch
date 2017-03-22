@@ -1,0 +1,405 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:blackboxes
+LIBS:smartplug-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Smartplug"
+Date "2017-03-12"
+Rev "A"
+Comp "CГApL∀b http://craplab.fi"
+Comment1 "Author: Sven Gregori <sven@craplab.fi>"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-01v090 U1
+U 1 1 58C416D5
+P 9250 2500
+F 0 "U1" H 9250 2400 50  0000 C CNN
+F 1 "ESP-01" H 9250 2600 50  0000 C CNN
+F 2 "" H 9250 2500 50  0001 C CNN
+F 3 "" H 9250 2500 50  0001 C CNN
+	1    9250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 58C4175F
+P 3850 3750
+F 0 "BT1" H 3950 3800 50  0000 L CNN
+F 1 "Battery" H 3950 3700 50  0000 L CNN
+F 2 "" V 3850 3790 50  0000 C CNN
+F 3 "" V 3850 3790 50  0000 C CNN
+	1    3850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58C4199F
+P 3850 1900
+F 0 "R1" V 3930 1900 50  0000 C CNN
+F 1 "2k2" V 3850 1900 50  0000 C CNN
+F 2 "" V 3780 1900 50  0000 C CNN
+F 3 "" H 3850 1900 50  0000 C CNN
+	1    3850 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 58C419D5
+P 4450 2450
+F 0 "R2" V 4530 2450 50  0000 C CNN
+F 1 "3k3" V 4450 2450 50  0000 C CNN
+F 2 "" V 4380 2450 50  0000 C CNN
+F 3 "" H 4450 2450 50  0000 C CNN
+	1    4450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 58C41A5A
+P 7150 4700
+F 0 "R6" V 7230 4700 50  0000 C CNN
+F 1 "10k" V 7150 4700 50  0000 C CNN
+F 2 "" V 7080 4700 50  0000 C CNN
+F 3 "" H 7150 4700 50  0000 C CNN
+	1    7150 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 58C41AFE
+P 6450 2450
+F 0 "R5" V 6530 2450 50  0000 C CNN
+F 1 "15k" V 6450 2450 50  0000 C CNN
+F 2 "" V 6380 2450 50  0000 C CNN
+F 3 "" H 6450 2450 50  0000 C CNN
+	1    6450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58C41BCF
+P 5450 2450
+F 0 "R4" V 5530 2450 50  0000 C CNN
+F 1 "10k" V 5450 2450 50  0000 C CNN
+F 2 "" V 5380 2450 50  0000 C CNN
+F 3 "" H 5450 2450 50  0000 C CNN
+	1    5450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 58C41BFA
+P 8150 3550
+F 0 "R7" V 8230 3550 50  0000 C CNN
+F 1 "10k" V 8150 3550 50  0000 C CNN
+F 2 "" V 8080 3550 50  0000 C CNN
+F 3 "" H 8150 3550 50  0000 C CNN
+	1    8150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58C41C2E
+P 4450 3650
+F 0 "R3" V 4530 3650 50  0000 C CNN
+F 1 "4k7" V 4450 3650 50  0000 C CNN
+F 2 "" V 4380 3650 50  0000 C CNN
+F 3 "" H 4450 3650 50  0000 C CNN
+	1    4450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_GSD Q1
+U 1 1 58C41CC9
+P 5000 3300
+F 0 "Q1" V 4850 3250 50  0000 R CNN
+F 1 "BSS84" V 5250 3400 50  0000 R CNN
+F 2 "" H 5200 3400 50  0000 C CNN
+F 3 "" H 5000 3300 50  0000 C CNN
+	1    5000 3300
+	0    1    -1   0   
+$EndComp
+$Comp
+L PN2222A Q2
+U 1 1 58C41DBC
+P 5100 4700
+F 0 "Q2" H 5300 4775 50  0000 L CNN
+F 1 "PN2222A" H 5300 4700 50  0000 L CNN
+F 2 "" H 5300 4625 50  0000 L CIN
+F 3 "" H 5100 4700 50  0000 L CNN
+	1    5100 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PN2222A Q3
+U 1 1 58C41DFA
+P 6000 4700
+F 0 "Q3" H 6200 4775 50  0000 L CNN
+F 1 "PN2222A" H 6200 4700 50  0000 L CNN
+F 2 "" H 6200 4625 50  0000 L CIN
+F 3 "" H 6000 4700 50  0000 L CNN
+	1    6000 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PN2222A Q4
+U 1 1 58C41E60
+P 8050 4050
+F 0 "Q4" H 8250 4125 50  0000 L CNN
+F 1 "PN2222A" H 8250 4050 50  0000 L CNN
+F 2 "" H 8250 3975 50  0000 L CIN
+F 3 "" H 8050 4050 50  0000 L CNN
+	1    8050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 58C4230B
+P 5000 5100
+F 0 "#PWR01" H 5000 4850 50  0001 C CNN
+F 1 "GND" H 5000 4950 50  0000 C CNN
+F 2 "" H 5000 5100 50  0000 C CNN
+F 3 "" H 5000 5100 50  0000 C CNN
+	1    5000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 58C42857
+P 4450 2750
+F 0 "#PWR02" H 4450 2500 50  0001 C CNN
+F 1 "GND" H 4450 2600 50  0000 C CNN
+F 2 "" H 4450 2750 50  0000 C CNN
+F 3 "" H 4450 2750 50  0000 C CNN
+	1    4450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 58C428F9
+P 5900 5100
+F 0 "#PWR03" H 5900 4850 50  0001 C CNN
+F 1 "GND" H 5900 4950 50  0000 C CNN
+F 2 "" H 5900 5100 50  0000 C CNN
+F 3 "" H 5900 5100 50  0000 C CNN
+	1    5900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 58C42AE1
+P 10550 2350
+F 0 "#PWR04" H 10550 2100 50  0001 C CNN
+F 1 "GND" H 10550 2200 50  0000 C CNN
+F 2 "" H 10550 2350 50  0000 C CNN
+F 3 "" H 10550 2350 50  0000 C CNN
+	1    10550 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8300 2350
+NoConn ~ 10200 2650
+NoConn ~ 8300 2550
+$Comp
+L BB-PWR-8009 U4
+U 1 1 58C54BD3
+P 7300 3250
+F 0 "U4" H 7300 3050 60  0000 C CNN
+F 1 "BB-PWR-8009" H 7300 3450 60  0000 C CNN
+F 2 "" H 7300 3250 60  0000 C CNN
+F 3 "" H 7300 3250 60  0000 C CNN
+	1    7300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB-uLiPo U3
+U 1 1 58C54C1A
+P 2900 3400
+F 0 "U3" H 2900 3050 60  0000 C CNN
+F 1 "USB-uLiPo" H 2900 3800 60  0000 C CNN
+F 2 "" H 2900 3400 60  0000 C CNN
+F 3 "" H 2900 3400 60  0000 C CNN
+	1    2900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 58C5506B
+P 6850 3400
+F 0 "#PWR05" H 6850 3150 50  0001 C CNN
+F 1 "GND" H 6850 3250 50  0000 C CNN
+F 2 "" H 6850 3400 50  0000 C CNN
+F 3 "" H 6850 3400 50  0000 C CNN
+	1    6850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 58C550A6
+P 7750 3400
+F 0 "#PWR06" H 7750 3150 50  0001 C CNN
+F 1 "GND" H 7750 3250 50  0000 C CNN
+F 2 "" H 7750 3400 50  0000 C CNN
+F 3 "" H 7750 3400 50  0000 C CNN
+	1    7750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 5V_Power_Supply U2
+U 1 1 58C55433
+P 1350 1950
+F 0 "U2" H 1350 1600 60  0000 C CNN
+F 1 "5V_Power_Supply" H 1350 2300 60  0000 C CNN
+F 2 "" H 1350 1950 60  0000 C CNN
+F 3 "" H 1350 1950 60  0000 C CNN
+	1    1350 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 58C439EC
+P 4150 3400
+F 0 "#PWR07" H 4150 3150 50  0001 C CNN
+F 1 "GND" H 4150 3250 50  0000 C CNN
+F 2 "" H 4150 3400 50  0000 C CNN
+F 3 "" H 4150 3400 50  0000 C CNN
+	1    4150 3400
+	1    0    0    -1  
+$EndComp
+Text Notes 850  6600 0    59   ~ 0
+- 5V Power Supply: random mains (230/120V) to 5V switching power supply\n- USB-uLiPo battery charger from Olimex, see https://www.olimex.com/Products/Power/USB-uLiPo/\n- BB-PWR-8009 3.3V DC DC converter, see https://www.olimex.com/Products/Breadboarding/BB-PWR-8009/
+Connection ~ 4450 3200
+Connection ~ 8150 2650
+Wire Wire Line
+	8150 2450 8150 3400
+Wire Wire Line
+	5450 1900 5450 2300
+Connection ~ 5450 1900
+Wire Wire Line
+	10150 2550 10200 2550
+Wire Wire Line
+	10150 1900 10150 2550
+Wire Wire Line
+	8150 2450 8300 2450
+Wire Wire Line
+	10200 2350 10550 2350
+Wire Wire Line
+	7300 4700 10350 4700
+Wire Wire Line
+	10350 4700 10350 2450
+Wire Wire Line
+	10350 2450 10200 2450
+Wire Wire Line
+	6200 4700 7000 4700
+Wire Wire Line
+	5900 5100 5900 4900
+Connection ~ 4450 1900
+Wire Wire Line
+	5300 4700 5450 4700
+Wire Wire Line
+	4450 2600 4450 2750
+Wire Wire Line
+	4450 1900 4450 2300
+Wire Wire Line
+	4000 1900 10150 1900
+Wire Wire Line
+	5000 5100 5000 4900
+Wire Wire Line
+	5000 3500 5000 4500
+Wire Wire Line
+	4450 3200 4450 3500
+Wire Wire Line
+	3550 3200 4800 3200
+Wire Wire Line
+	6850 3300 6850 3400
+Wire Wire Line
+	7750 3300 7750 3400
+Wire Wire Line
+	7750 3200 8150 3200
+Wire Wire Line
+	5200 3200 6850 3200
+Wire Wire Line
+	3550 3300 4150 3300
+Wire Wire Line
+	4150 3300 4150 3400
+Wire Wire Line
+	3850 3600 3850 3450
+Wire Wire Line
+	3850 3450 3550 3450
+Wire Wire Line
+	3550 3550 3550 4050
+Wire Wire Line
+	3550 4050 3850 4050
+Wire Wire Line
+	3850 4050 3850 3900
+Wire Wire Line
+	5450 4700 5450 2600
+Wire Wire Line
+	4450 3800 4450 4050
+Wire Wire Line
+	4450 4050 5900 4050
+Connection ~ 5000 4050
+Wire Wire Line
+	5900 4050 5900 4500
+Wire Wire Line
+	1850 1900 3700 1900
+Wire Wire Line
+	2250 3300 2250 1900
+Connection ~ 2250 1900
+Wire Wire Line
+	2100 2050 2100 3450
+Wire Wire Line
+	2100 3450 2250 3450
+Wire Wire Line
+	2100 2050 1850 2050
+Connection ~ 8150 3200
+Wire Wire Line
+	8150 2650 8300 2650
+Connection ~ 8150 4700
+Wire Wire Line
+	6450 2300 6450 1900
+Connection ~ 6450 1900
+Wire Wire Line
+	6450 2600 6450 4050
+Wire Wire Line
+	6450 4050 7850 4050
+Wire Wire Line
+	8150 4700 8150 4250
+Wire Wire Line
+	8150 3850 8150 3700
+$EndSCHEMATC

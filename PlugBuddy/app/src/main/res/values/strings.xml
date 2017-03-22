@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PlugBuddy</string>
+
+    <string name="settings_host_text">Server Host</string>
+    <string name="settings_host_hint">WebSocket server IP</string>
+    <string name="settings_port_text">Server Port</string>
+    <string name="settings_port_hint">WebSocket Server port</string>
+    <string name="settings_plug_id_text">SmartPlug Id</string>
+    <string name="settings_plug_id_hint">Your SmartPlug\'s identifer</string>
+</resources>

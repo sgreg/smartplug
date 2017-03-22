@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#307080</color>
+    <color name="colorPrimaryDark">#006070</color>
+    <color name="colorAccent">#307080</color>
+
+    <color name="background">#fff</color>
+
+    <color name="plugged">#307080</color>
+    <color name="unplugged">#eee</color>
+    <color name="disconnected">#d09080</color>
+
+    <color name="settingsIcon">#ccc</color>
+</resources>
