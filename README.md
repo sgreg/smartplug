@@ -15,6 +15,11 @@ for tweeting and sending status changes via WebSockets to the [Android companion
 app](PlugBuddy/). Alternatively, the firmware can be set up to use
 [ThingSpeak](https://thingspeak.com/) for tweeting instead.
 
+### Links
+
+[Blog article](http://sgreg.fi/blog/article/creating-an-utterly-useless-smart-power-plug)  
+[Hackaday.io](https://hackaday.io/project/20736-the-utterly-useless-smartplug)
+
 ### License
 
 Everything is released under the MIT License.
