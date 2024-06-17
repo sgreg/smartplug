@@ -17,7 +17,7 @@ app](PlugBuddy/). Alternatively, the firmware can be set up to use
 
 ### Links
 
-[Blog article](http://sgreg.fi/blog/article/creating-an-utterly-useless-smart-power-plug)  
+[Blog article](http://sgreg.craplab.fi/blog/article/creating-an-utterly-useless-smart-power-plug)  
 [Hackaday.io](https://hackaday.io/project/20736-the-utterly-useless-smartplug)
 
 ### License
